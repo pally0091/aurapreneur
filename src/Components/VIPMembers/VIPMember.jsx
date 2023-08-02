@@ -16,7 +16,7 @@ const VIPMember = ({ data }) => {
                 </div>
                 <div>
                     <h1 className='text-xl font-semibold'>{name}</h1>
-                    <p className='text-sm'>Order Commission <span className='text-red-500 mx-3'> ${commission}</span></p>
+                    <p className='text-sm'>Order Commission <span className='text-red-500 text-lg mx-3'> ${commission}</span></p>
                 </div>
             </div>
             <div className='p-5'>
