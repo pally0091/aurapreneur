@@ -1,10 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import speaker from "../assets/Images/speaker.png"
+import speaker from "../assets/Images/speaker.png";
+import arrow from "../assets/Images/arrow-right.png";
+import wallet from "../assets/Images/wallet.png";
+import earn from "../assets/Images/earn.png";
 
 const Buttons = () => {
     return (
         <div>
+            {/* MarqueeSection */}
             <div className="bg-purple-800 p-4 shadow-md relative text-white border-8 border-transparent overflow-hidden ">
                 {/* Speaker Icon */}
                 <div className="absolute top-1/2 transform -translate-y-1/2 left-4 w-10 h-10 bg-gray-100 rounded-full shadow-md flex items-center justify-center ">
@@ -17,6 +21,39 @@ const Buttons = () => {
                     </div>
                 </div>
             </div>
+
+            {/* buttonSection */}
+            <div className='grid grid-cols-2 px-10 py-3 gap-8'>
+                <div className='w-full bg-green-400 rounded-md'>
+                    <button className='flex justify-between items-center flex-row w-full p-3 focus:ring-4 rounded-md focus:ring-green-300' type='submit'>
+                        <div>
+                            <h1 className='text-2xl font-semibold my-1'>Deposit</h1>
+                            <div className='w-6 h-6 rounded-full'>
+                                <img className='w-full h-full' src={arrow} alt="" />
+                            </div>
+                        </div>
+                        <div className='w-10 h-10 rounded-2xl'>
+                            <img className='w-full h-full' src={wallet} alt="" />
+                        </div>
+                    </button>
+                </div>
+                <div className='w-full bg-blue-400 rounded-md'>
+                    <button className='flex justify-between items-center  flex-row w-full p-3 focus:ring-4 rounded-md focus:ring-blue-300' type='submit'>
+                        <div className=''>
+                            <h1 className='text-2xl font-semibold my-1 '>Withdraw</h1>
+                            <div className='w-6 h-6 rounded-full'>
+                                <img className='w-full h-full' src={arrow} alt="" />
+                            </div>
+                        </div>
+                        <div className='w-10 h-10 rounded-2xl'>
+                            <img className='w-full h-full transform scale-x-[-1]' src={earn} alt="" />
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+
+
         </div>
     );
 };
