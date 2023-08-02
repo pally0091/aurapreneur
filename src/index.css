@@ -8,3 +8,17 @@ body {
   color: #333;
   background-color: #bebcbc;
 }
+
+@keyframes marqueeAnimation {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animation {
+  animation: marqueeAnimation 25s linear infinite;
+}

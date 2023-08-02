@@ -11,7 +11,7 @@ const Navigation = () => {
                 <h1 className='text-3xl'>TradeVista</h1>
             </div>
             <div className="flex items-center ">
-                <label className="block text-gray-700 text-sm font-bold mx-3" htmlFor="selectOption">
+                <label className="block text-gray-700 text-md font-bold mx-3" htmlFor="selectOption">
                     Language:
                 </label>
                 <select className="block appearance-none w-full bg-white border border-gray-300 rounded py-2 px-4 leading-tight " id="selectOption">
