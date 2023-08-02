@@ -22,3 +22,39 @@ body {
 .animation {
   animation: marqueeAnimation 25s linear infinite;
 }
+
+#missonHall {
+  position: relative;
+}
+
+#missionHall::before {
+
+  content: "";
+  position: absolute;
+  background: rgb(0, 0, 0);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 10px;
+  height: 2px;
+  bottom: 0;
+  right: -10px;
+  color: rgb(0, 0, 0);
+}
+
+#missionHall::after {
+
+  content: "";
+  position: absolute;
+  background: rgb(0, 0, 0);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 10px;
+  height: 2px;
+  bottom: 0;
+  right: -10px;
+  top: 0;
+  left: -10px;
+  color: rgb(0, 0, 0);
+}
