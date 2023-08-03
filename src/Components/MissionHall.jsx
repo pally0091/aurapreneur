@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import VIPMembers from './VIPMembers/VIPMembers';
+import BottomNavigation from './BottomNavigation';
 
 const MissionHall = () => {
     return (
@@ -15,6 +16,7 @@ const MissionHall = () => {
                 </div>
             </div>
             <VIPMembers></VIPMembers>
+            <BottomNavigation></BottomNavigation>
         </div >
     );
 };

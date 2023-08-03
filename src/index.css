@@ -58,3 +58,14 @@ body {
   left: -10px;
   color: rgb(0, 0, 0);
 }
+
+.fixed-bottom-div {
+  position: fixed;
+  bottom: 0;
+  width: 50%;
+  background-color: #007bff;
+  color: #fff;
+  /* padding: 10px; */
+  text-align: center;
+  font-size: 18px;
+}
