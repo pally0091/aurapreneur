@@ -1,14 +1,15 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import logo from "../assets/Images/logo.png"
 
 const Navigation = () => {
     return (
         <div className=' mx-auto flex justify-between px-5 py-3'>
-            <div>
-                <div>
-                    <img src="" alt="" />
+            <div className='flex justify-center items-center' >
+                <div className=' h-10 rounded-full'>
+                    <img className='w-full h-full rounded-2xl' src={logo} alt="" />
                 </div>
-                <h1 className='text-3xl'>TradeVista</h1>
+
             </div>
             <div className="flex items-center ">
                 <label className="block text-gray-700 text-md font-bold mx-3" htmlFor="selectOption">
