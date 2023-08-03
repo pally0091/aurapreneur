@@ -7,7 +7,7 @@ const Navigation = () => {
         <div className=' mx-auto flex justify-between px-5 py-3'>
             <div className='flex justify-center items-center' >
                 <div className=' h-10 rounded-full'>
-                    <img className='w-full h-full rounded-2xl' src={logo} alt="" />
+                    <img className='w-full h-full rounded-xl' src={logo} alt="" />
                 </div>
 
             </div>
