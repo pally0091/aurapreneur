@@ -2,6 +2,7 @@
 import React from 'react';
 import VIPMembers from './VIPMembers/VIPMembers';
 import BottomNavigation from './BottomNavigation';
+import UtilityButton from './UtilityButton';
 
 const MissionHall = () => {
     return (
@@ -16,6 +17,7 @@ const MissionHall = () => {
                 </div>
             </div>
             <VIPMembers></VIPMembers>
+            <UtilityButton></UtilityButton>
             <BottomNavigation></BottomNavigation>
         </div >
     );
