@@ -2,13 +2,15 @@
 import React from 'react';
 import Buttons from './Buttons';
 import MissionHall from './MissionHall';
+import MembershipList from './MembershipList';
 
 
 const Home = () => {
     return (
-        <div>
+        <div className='mb-20'>
             <Buttons></Buttons>
             <MissionHall></MissionHall>
+            <MembershipList></MembershipList>
 
 
         </div>

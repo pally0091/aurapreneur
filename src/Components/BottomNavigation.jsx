@@ -41,8 +41,8 @@ const BottomNavigation = () => {
 
 
     return (
-        <div className="fixed-bottom-div ">
-            <div ref={componentRef} className="bottom-navigation fixed bottom-0 w-1/2 flex justify-around items-center bg-[#fee2e2] shadow-md py-1 rounded-lg">
+        <div className="fixed-bottom-div z-10">
+            <div ref={componentRef} className=" fixed bottom-0 w-1/2 flex justify-around items-center bg-[#fee2e2] shadow-md py-1 rounded-lg">
 
                 {linksData.map((link, index) => (
                     <a
