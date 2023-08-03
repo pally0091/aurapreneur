@@ -27,6 +27,10 @@ body {
   position: relative;
 }
 
+#membershipList {
+  position: relative;
+}
+
 #missionHall::before {
 
   content: "";
@@ -44,6 +48,36 @@ body {
 
 #missionHall::after {
 
+  content: "";
+  position: absolute;
+  background: rgb(0, 0, 0);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 10px;
+  height: 2px;
+  bottom: 0;
+  right: -10px;
+  top: 0;
+  left: -10px;
+  color: rgb(0, 0, 0);
+}
+
+#membershipList::before {
+  content: "";
+  position: absolute;
+  background: rgb(0, 0, 0);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 10px;
+  height: 2px;
+  bottom: 0;
+  right: -10px;
+  color: rgb(0, 0, 0);
+}
+
+#membershipList::after {
   content: "";
   position: absolute;
   background: rgb(0, 0, 0);

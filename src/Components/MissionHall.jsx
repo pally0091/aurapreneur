@@ -3,6 +3,7 @@ import React from 'react';
 import VIPMembers from './VIPMembers/VIPMembers';
 import BottomNavigation from './BottomNavigation';
 import UtilityButton from './UtilityButton';
+import MembershipList from './MembershipList';
 
 const MissionHall = () => {
     return (
@@ -18,6 +19,7 @@ const MissionHall = () => {
             </div>
             <VIPMembers></VIPMembers>
             <UtilityButton></UtilityButton>
+            <MembershipList></MembershipList>
             <BottomNavigation></BottomNavigation>
         </div >
     );
