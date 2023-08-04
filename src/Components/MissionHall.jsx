@@ -20,7 +20,7 @@ const MissionHall = () => {
             <VIPMembers></VIPMembers>
             <UtilityButton></UtilityButton>
 
-            <BottomNavigation></BottomNavigation>
+            
         </div >
     );
 };
