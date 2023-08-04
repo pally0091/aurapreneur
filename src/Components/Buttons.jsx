@@ -74,7 +74,7 @@ const Buttons = () => {
         <div className="w-full bg-green-400 rounded-md">
           {/* deposite BTN  */}
           <button
-            className="flex justify-between items-center flex-row w-full p-3 focus:ring-4 rounded-md focus:ring-green-300"
+            className="flex justify-between items-center flex-row  border border-black w-full p-3 focus:ring-4 rounded-md focus:ring-green-300"
             type="submit"
           >
             <div>
@@ -99,7 +99,7 @@ const Buttons = () => {
         <div className="w-full bg-blue-400 rounded-md">
           {/* withdraw BTN  */}
           <button
-            className="flex justify-between items-center  flex-row w-full p-3 focus:ring-4 rounded-md focus:ring-blue-300"
+            className="flex justify-between items-center border border-black  flex-row w-full p-3 focus:ring-4 rounded-md focus:ring-blue-300"
             type="submit"
           >
             <div className="">
