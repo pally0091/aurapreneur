@@ -20,7 +20,7 @@ const Login = () => {
             <input
               type="text"
               id="username"
-              className="w-full bg-gray-300 p-3 rounded-md focus:outline"
+              className="w-full bg-gray-300 p-3 rounded-md focus:outline shadow-md shadow-gray-700 "
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               required
@@ -32,7 +32,7 @@ const Login = () => {
             <input
               type="password"
               id="password"
-              className="w-full bg-gray-300 p-3 rounded-md focus:outline"
+              className="w-full bg-gray-300 p-3 rounded-md focus:outline shadow-md shadow-gray-700"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
