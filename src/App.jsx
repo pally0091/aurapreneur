@@ -4,6 +4,7 @@ import Home from "./Components/Home";
 import Login from "./Components/Login";
 import Deposite from "./Components/Deposite";
 import Withdraw from "./Components/Withdraw";
+import PrivateRoute from "./Components/PrivateRoute";
 
 function App() {
   const router = createBrowserRouter([
@@ -17,11 +18,19 @@ function App() {
         },
         {
           path: "/deposite",
-          element: <Deposite></Deposite>,
+          element: (
+            <PrivateRoute>
+              <Deposite></Deposite>
+            </PrivateRoute>
+          ),
         },
         {
           path: "/withdraw",
-          element: <Withdraw></Withdraw>,
+          element: (
+            <PrivateRoute>
+              <Withdraw></Withdraw>
+            </PrivateRoute>
+          ),
         },
       ],
     },
