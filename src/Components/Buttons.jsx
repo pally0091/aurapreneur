@@ -4,6 +4,7 @@ import speaker from "../assets/Images/speaker.png";
 import arrow from "../assets/Images/arrow-right.png";
 import wallet from "../assets/Images/wallet.png";
 import earn from "../assets/Images/earn.png";
+import { Link } from "react-router-dom";
 
 const Buttons = () => {
   return (
@@ -73,53 +74,57 @@ const Buttons = () => {
       <div className="grid grid-cols-2 px-10 py-3 gap-8">
         <div className="w-full bg-green-400 rounded-md">
           {/* deposite BTN  */}
-          <button
-            className="flex justify-between items-center flex-row  border border-black w-full p-3 focus:ring-4 rounded-md focus:ring-green-300"
-            type="submit"
-          >
-            <div>
-              <h1 className="text-2xl font-semibold my-1">Deposit</h1>
-              <div className="w-6 h-6 rounded-full">
+          <Link to="/deposite">
+            <button
+              className="flex justify-between items-center flex-row  border border-black w-full p-3 focus:ring-4 rounded-md focus:ring-green-300"
+              type="submit"
+            >
+              <div>
+                <h1 className="text-2xl font-semibold my-1">Deposit</h1>
+                <div className="w-6 h-6 rounded-full">
+                  <img
+                    className="w-full h-full"
+                    src={arrow}
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="w-10 h-10 rounded-2xl">
                 <img
                   className="w-full h-full"
-                  src={arrow}
+                  src={wallet}
                   alt=""
                 />
               </div>
-            </div>
-            <div className="w-10 h-10 rounded-2xl">
-              <img
-                className="w-full h-full"
-                src={wallet}
-                alt=""
-              />
-            </div>
-          </button>
+            </button>
+          </Link>
         </div>
         <div className="w-full bg-blue-400 rounded-md">
           {/* withdraw BTN  */}
-          <button
-            className="flex justify-between items-center border border-black  flex-row w-full p-3 focus:ring-4 rounded-md focus:ring-blue-300"
-            type="submit"
-          >
-            <div className="">
-              <h1 className="text-2xl font-semibold my-1 ">Withdraw</h1>
-              <div className="w-6 h-6 rounded-full">
+          <Link to="/withdraw">
+            <button
+              className="flex justify-between items-center border border-black  flex-row w-full p-3 focus:ring-4 rounded-md focus:ring-blue-300"
+              type="submit"
+            >
+              <div className="">
+                <h1 className="text-2xl font-semibold my-1 ">Withdraw</h1>
+                <div className="w-6 h-6 rounded-full">
+                  <img
+                    className="w-full h-full"
+                    src={arrow}
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="w-10 h-10 rounded-2xl">
                 <img
-                  className="w-full h-full"
-                  src={arrow}
+                  className="w-full h-full transform scale-x-[-1]"
+                  src={earn}
                   alt=""
                 />
               </div>
-            </div>
-            <div className="w-10 h-10 rounded-2xl">
-              <img
-                className="w-full h-full transform scale-x-[-1]"
-                src={earn}
-                alt=""
-              />
-            </div>
-          </button>
+            </button>
+          </Link>
         </div>
       </div>
     </div>
